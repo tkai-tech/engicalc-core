@@ -10,8 +10,10 @@ acoustics) behind engicalc.tkai.tech. Zero dependencies, Node and browser. API n
 ## Nutzung
 
 ```bash
-npm install github:tkai-tech/engicalc-core
+npm install --allow-git=all github:tkai-tech/engicalc-core
 ```
+
+Ab npm 12 sind Git-Quellen ohne `--allow-git` gesperrt. Alternativ die Moduldateien einfach kopieren.
 
 ```js
 const { stroemung } = require("engicalc-core");
