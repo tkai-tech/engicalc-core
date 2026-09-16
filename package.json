@@ -6,9 +6,8 @@
   "files": ["*.js", "!test.js"],
   "scripts": { "test": "node --test test.js" },
   "keywords": ["engineering", "calculator", "fluid", "heat-transfer", "strength", "pump", "acoustics", "maschinenbau"],
-  "repository": "github:tkai-tech/engicalc-core",
+  "repository": { "type": "git", "url": "git+https://github.com/tkai-tech/engicalc-core.git" },
   "homepage": "https://engicalc.tkai.tech",
   "license": "MIT",
-  "author": "tkai.tech (Thomas Koormann)",
-  "private": true
+  "author": "tkai.tech (Thomas Koormann)"
 }
