@@ -1,0 +1,14 @@
+{
+  "name": "engicalc-core",
+  "version": "0.1.0",
+  "description": "Auslegungsformeln für Maschinen- und Anlagenbau: Strömung, Wärme, Festigkeit, Maschinenelemente, Pumpen, Akustik. Ohne Abhängigkeiten, Node und Browser.",
+  "main": "index.js",
+  "files": ["*.js", "!test.js"],
+  "scripts": { "test": "node --test test.js" },
+  "keywords": ["engineering", "calculator", "fluid", "heat-transfer", "strength", "pump", "acoustics", "maschinenbau"],
+  "repository": "github:tkai-tech/engicalc-core",
+  "homepage": "https://engicalc.tkai.tech",
+  "license": "MIT",
+  "author": "tkai.tech (Thomas Koormann)",
+  "private": true
+}
