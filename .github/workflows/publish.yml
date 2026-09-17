@@ -18,10 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Kein registry-url bei setup-node: das schreibt eine .npmrc mit leerem Token,
+      # npm nimmt dann diesen Token statt OIDC und der Publish scheitert mit 404.
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          registry-url: https://registry.npmjs.org
       - run: npm install -g npm@latest      # Trusted Publishing braucht npm 11.5.1 oder neuer
       - run: npm test
       - run: npm publish
