@@ -1,13 +1,20 @@
 {
   "name": "engicalc-core",
-  "version": "0.1.0",
-  "description": "Auslegungsformeln für Maschinen- und Anlagenbau: Strömung, Wärme, Festigkeit, Maschinenelemente, Pumpen, Akustik. Ohne Abhängigkeiten, Node und Browser.",
+  "version": "0.1.1",
+  "description": "Auslegungsformeln für Maschinen- und Anlagenbau: Druckverlust, Wärmeübergang, Festigkeit, Maschinenelemente, Pumpen, Akustik. Engineering formulas, zero dependencies, Node and browser.",
   "main": "index.js",
   "files": ["*.js", "!test.js"],
   "scripts": { "test": "node --test test.js" },
-  "keywords": ["engineering", "calculator", "fluid", "heat-transfer", "strength", "pump", "acoustics", "maschinenbau"],
+  "keywords": [
+    "engineering", "mechanical-engineering", "maschinenbau", "anlagenbau", "auslegung",
+    "calculator", "formulas", "pressure-drop", "druckverlust", "darcy-weisbach", "colebrook",
+    "reynolds", "fluid-mechanics", "heat-transfer", "heat-exchanger", "lmtd", "u-value",
+    "strength", "bending", "buckling", "euler", "bolt", "vdi-2230", "pump", "npsh",
+    "acoustics", "sound-pressure", "zero-dependencies"
+  ],
   "repository": { "type": "git", "url": "git+https://github.com/tkai-tech/engicalc-core.git" },
   "homepage": "https://engicalc.tkai.tech",
+  "bugs": "https://github.com/tkai-tech/engicalc-core/issues",
   "license": "MIT",
   "author": "tkai.tech (Thomas Koormann)"
 }

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: engicalc-core
+abstract: >-
+  24 Auslegungsformeln für den Maschinen- und Anlagenbau (Strömung, Wärme, Festigkeit,
+  Maschinenelemente, Pumpen, Akustik) als abhängigkeitsfreie JavaScript-Bibliothek.
+message: Wenn Sie diese Bibliothek verwenden, zitieren Sie sie bitte wie folgt.
+type: software
+authors:
+  - name: tkai.tech
+    website: https://tkai.tech
+repository-code: https://github.com/tkai-tech/engicalc-core
+url: https://engicalc.tkai.tech
+license: MIT
+version: 0.1.1
+date-released: 2026-09-17
+keywords:
+  - engineering
+  - maschinenbau
+  - fluid mechanics
+  - heat transfer
+  - strength
+  - pumps
+  - acoustics
