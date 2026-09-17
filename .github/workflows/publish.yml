@@ -1,0 +1,27 @@
+# Veröffentlicht das Paket auf npm über Trusted Publishing (OIDC), ohne Token und ohne 2FA.
+# Läuft bei einem neuen Release und auf Knopfdruck. Voraussetzung: dieses Repo und dieser
+# Workflow sind in den npm-Paketeinstellungen als Trusted Publisher eingetragen, mit
+# erlaubter Aktion "npm publish".
+name: npm publish
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: https://registry.npmjs.org
+      - run: npm install -g npm@latest      # Trusted Publishing braucht npm 11.5.1 oder neuer
+      - run: npm test
+      - run: npm publish
